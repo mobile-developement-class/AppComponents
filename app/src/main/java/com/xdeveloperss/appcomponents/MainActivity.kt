@@ -21,6 +21,22 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onResume")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause")
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy")
+    }
+
     companion object{
         const val TAG = "MainActivity"
     }
